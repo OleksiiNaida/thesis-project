@@ -296,6 +296,128 @@ ul {
   padding-bottom: 70px;
 }
 
+.aboutUs .developers {
+  position: relative;
+}
+
+.aboutUs .developers .slider {
+  color: #dddddd;
+  background-color: rgba(85, 85, 85, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 38px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.aboutUs .developers .slider span {
+  width: 8px;
+  height: 14px;
+}
+
+.aboutUs .developers .slider__previous {
+  z-index: 1;
+}
+
+.aboutUs .developers__portret {
+  overflow: hidden;
+  position: relative;
+  width: 263px;
+  height: 250px;
+}
+
+.aboutUs .developers__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.aboutUs .developers__name {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #555555;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.aboutUs .developers__profession {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #555555;
+  margin: 0;
+}
+
+.aboutUs .contacts {
+  background-color: rgba(85, 85, 85, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.aboutUs .contacts:hover {
+  opacity: 1;
+}
+
+.aboutUs .contacts__item {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-animation-timing-function: step-end;
+          animation-timing-function: step-end;
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  max-width: 28px;
+  max-height: 28px;
+  margin-bottom: 30px;
+}
+
+.aboutUs .contacts__item:hover {
+  background-color: #c0301c;
+  opacity: 1;
+}
+
+.aboutUs .contacts__img_facebook-size {
+  width: 9px;
+  height: 16px;
+}
+
+.aboutUs .contacts__img_twitter-size {
+  width: 17px;
+  height: 14px;
+}
+
+.aboutUs .contacts__img_google-size {
+  width: 17px;
+  height: 16px;
+}
+
+.aboutUs .contacts__img_linkedin-size {
+  width: 14px;
+  height: 14px;
+}
+
 .orderAproject {
   position: relative;
   text-align: center;
