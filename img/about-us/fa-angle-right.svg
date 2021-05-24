@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14" width="8" height="14">
+	<title>fa-angle-left</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #dddddd } 
+	</style>
+	<path id="fa-angle-left" class="shp0" d="M0 12.84C0 12.96 0.05 13.07 0.14 13.16L0.82 13.86C0.91 13.94 1.03 14 1.14 14C1.25 14 1.37 13.94 1.46 13.86L7.86 7.32C7.94 7.24 8 7.11 8 7C8 6.89 7.94 6.76 7.86 6.68L1.46 0.14C1.37 0.06 1.25 0 1.14 0C1.03 0 0.91 0.06 0.82 0.14L0.14 0.84C0.05 0.93 0 1.05 0 1.16C0 1.28 0.05 1.4 0.14 1.49L5.54 7L0.14 12.51C0.05 12.6 0 12.72 0 12.84Z" />
+</svg>
