@@ -454,10 +454,6 @@ ul {
   padding-left: 20px;
 }
 
-.latestWorks__navigateItem :hover {
-  color: #c0301c;
-}
-
 .latestWorks__navigateItem:first-child {
   padding-left: 0px;
 }
@@ -467,6 +463,14 @@ ul {
   line-height: 24px;
   font-weight: 400;
   color: #555555;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.latestWorks__navigateItem a:hover {
+  color: #c0301c;
 }
 
 .latestWorks__item {
@@ -505,10 +509,6 @@ ul {
   bottom: 0;
   background-color: rgba(192, 48, 28, 0.6);
   opacity: 0;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
 }
 
 .latestWorks__content:hover {
@@ -850,6 +850,11 @@ ul {
   font-weight: 400;
   color: #000;
   border: 1px solid #555555;
+  outline: none;
+}
+
+.contactYou .form__input:focus {
+  border-color: red;
 }
 
 .contactYou .form__input::-webkit-input-placeholder {
@@ -882,10 +887,6 @@ ul {
   font-weight: 400;
   text-transform: uppercase;
   color: #555555;
-}
-
-.contactYou .form__input:focus {
-  border-color: #c0301c;
 }
 
 .contactYou .form__btn {

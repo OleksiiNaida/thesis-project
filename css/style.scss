@@ -417,19 +417,19 @@ ul{
       text-align: center;
       display: inline-block;
       padding-left: 20px;
-      // transition-property: all;
-      // transition-duration: 0.5s;
-      :hover{
-         color: #c0301c;
-      }
       &:first-child{
          padding-left: 0px;
       }
-      & a{
+      a{
          font-size: 16px;
          line-height: 24px;
          font-weight: 400;
          color: #555555;
+         transition-property: all;
+         transition-duration: 0.5s;
+         &:hover{
+            color: #c0301c;
+         }
       }
    }
 
@@ -462,8 +462,6 @@ ul{
       bottom: 0;
       background-color: rgba(192, 48, 28, 0.6);
       opacity: 0;
-      transition-property: all;
-      transition-duration: 1s;
       &:hover{
          opacity: 1;
       }
@@ -815,6 +813,10 @@ ul{
             font-weight: 400;
             color: #000;
             border: 1px solid #555555;
+            outline: none;
+         &:focus{
+            border-color: red;
+         }
          &::placeholder{
             font-size: 12px;
             line-height: 20px;
@@ -822,9 +824,9 @@ ul{
             text-transform: uppercase;
             color: #555555;
          }
-         &:focus{
-            border-color: #c0301c;
-         }
+         // &:focus{
+         //    border-color: #c0301c;
+         // }
       }
       &__btn{
          padding: 0px;
