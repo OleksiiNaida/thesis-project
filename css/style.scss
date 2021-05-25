@@ -436,11 +436,8 @@ ul{
    &__item {
       position: relative;
       overflow: hidden;
-      // flex: 0 0 33.33%;
-      // width: 360px;
       height: 320px;
       margin: 15px 0px 15px 0px;
-      // padding: 0px;
    }
 
    &__img {
@@ -456,6 +453,8 @@ ul{
       align-items: center;
       position: absolute;
       margin: 0px 13px 0px 12px;
+      transition-property: all;
+      transition-duration: 0.5s;
       top: 0;
       left: 0;
       right: 0;
@@ -465,6 +464,14 @@ ul{
       &:hover{
          opacity: 1;
       }
+   }
+
+   &__fa-angle-right-img{
+      position: absolute;
+      top: 36%;
+      left: 76%;
+      width: 6px;
+      height: 10px;
    }
 
    &__author {
@@ -486,6 +493,7 @@ ul{
 
    &__link {
       width: 100px;
+      position: relative;
       height: 34px;
       &:hover{
          color: #c0301c;

@@ -503,6 +503,10 @@ ul {
           align-items: center;
   position: absolute;
   margin: 0px 13px 0px 12px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   top: 0;
   left: 0;
   right: 0;
@@ -513,6 +517,14 @@ ul {
 
 .latestWorks__content:hover {
   opacity: 1;
+}
+
+.latestWorks__fa-angle-right-img {
+  position: absolute;
+  top: 36%;
+  left: 76%;
+  width: 6px;
+  height: 10px;
 }
 
 .latestWorks__author {
@@ -534,6 +546,7 @@ ul {
 
 .latestWorks__link {
   width: 100px;
+  position: relative;
   height: 34px;
   display: inline-block;
   color: #c0301c;
