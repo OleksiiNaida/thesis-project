@@ -114,8 +114,16 @@ ul{
       line-height: 36px;
       font-weight: 400;
       letter-spacing: 0.025em;
+      position: relative;
       & a{
+         position: absolute;
          color: #fff;
+         transition-property: all;
+         transition-duration: 0.5s;
+         &:hover{
+            transform: scale(1.2);
+            letter-spacing: 1.5px;
+         }
       }
    }
 }
@@ -276,13 +284,24 @@ ul{
    }
    .developers {
       position: relative;
-      .slider{
-         color: #dddddd;;
+      padding-bottom: 70px;
+      &__item{
+         text-align: center;
+      }
+
+      // .slick-slider{
+
+      // }
+
+      .slick-arrow{
+         color: #dddddd;
+         font-size: 0;
+         border: 0;
+         outline: none;
          line-height: 34px;
          background-color: rgba(85, 85, 85, 0.2);
          position: absolute;
-         top: 0;
-         left: 0;
+         top: 27%;
          width: 35px;
          height: 38px;
          text-align: center;
@@ -290,20 +309,37 @@ ul{
          transition-duration: 0.5s;
          animation-timing-function:step-end;
          cursor: pointer;
+         z-index: 1;
          &:hover{
             background-color: #c0301c;
          }
-         & img{
-            width: 8px;
-            height: 14px;
-         }
+      }
 
-         &__next{
-            // z-index: 1;
+      .slick-next{
+         right: 2.4%;
+         &:after{
+            content: '';
+            width: 15px;
+            height: 15px;
+            background: url('../img/about-us/fa-angle-right.svg') center no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: 33%;
+            top: 30%;
          }
+      }
 
-         &__previous{
-            z-index: 1;
+      .slick-prev{
+         left: 2.4%;
+         &:after{
+            content: '';
+            width: 15px;
+            height: 15px;
+            background: url('../img/about-us/fa-angle-left.svg') center no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: 24%;
+            top: 30%;
          }
       }
       
@@ -312,14 +348,16 @@ ul{
          position: relative;
          width: 263px;
          height: 250px;
-         // opacity: 0;
+         margin: 0 auto;
       }
       &__img{
          object-fit: cover;
+         &[alt = "Oleksii Naida"]{
+            transform: scale(1.13);
+         }
       }
 
 		&__name {
-         // text-align: center;
          font-family: Montserrat;
          font-size: 14px;
          line-height: 24px;
@@ -331,7 +369,6 @@ ul{
       }
 
 		&__profession {
-         // text-align: center;
          font-size: 13px;
          line-height: 24px;
          font-weight: 400;
@@ -341,9 +378,10 @@ ul{
 }
    .contacts {
       background-color: rgba(85, 85, 85, 0.5);
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
+      // display: flex;
+      // justify-content: center;
+      // align-items: flex-end;
+      padding-top: 71%;
       position: absolute;
       top: 0;
       left: 0;
@@ -356,14 +394,14 @@ ul{
          opacity: 1;
       }
       &__item {
+         display: inline-block;
          transition-duration: 0.5s;
          animation-timing-function:step-end;
          text-align: center;
          flex: 0 0 25%;
-         max-width: 28px;
-         max-height: 28px;
-         line-height: 28px;
-         margin-bottom: 30px;
+         min-width: 28px;
+         min-height: 28px;
+         position: relative;
          &:hover{
             background-color: #c0301c;
             opacity: 1;
@@ -371,25 +409,35 @@ ul{
       }
 
       &__img {
-         
+
+         position: absolute;
+
          &_facebook-size {
             width: 9px;
             height: 16px;
+            top: 24%;
+            left: 34%;
          }
 
          &_twitter-size {
             width: 17px;
             height: 14px;
+            top: 25%;
+            left: 24%;
          }
 
          &_google-size {
             width: 17px;
             height: 16px;
+            top: 25%;
+            left: 22%;
          }
 
          &_linkedin-size {
             width: 14px;
             height: 14px;
+            top: 25%;
+            left: 23%;
          }
       }
    }
@@ -420,16 +468,18 @@ ul{
       &:first-child{
          padding-left: 0px;
       }
-      a{
+      input {
+         display: none;
+         &:checked + p{
+            color: #c0301c;
+         }
+      }
+      p{
+         cursor: pointer;
          font-size: 16px;
          line-height: 24px;
          font-weight: 400;
          color: #555555;
-         transition-property: all;
-         transition-duration: 0.5s;
-         &:hover{
-            color: #c0301c;
-         }
       }
    }
 
@@ -707,6 +757,7 @@ ul{
       font-style: italic;
       color: #555555;
       margin: 0 auto 0 auto;
+      display: none;
       &_indent{
          margin-bottom: 0;
          padding-bottom: 40px;
@@ -751,6 +802,16 @@ ul{
       //    background-color: #c0301c;
       // }
    }
+}
+
+.opened{
+   animation: fadeIn 0.8s;
+   display: block;
+}
+
+@keyframes fadeIn {
+   0%   { opacity: 0; }
+   100% { opacity: 1; }
 }
 
 // Секция 8 getTouch

@@ -119,10 +119,22 @@ ul {
   line-height: 36px;
   font-weight: 400;
   letter-spacing: 0.025em;
+  position: relative;
 }
 
 .navigate__item a {
+  position: absolute;
   color: #fff;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.navigate__item a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  letter-spacing: 1.5px;
 }
 
 .btn-send {
@@ -298,15 +310,22 @@ ul {
 
 .aboutUs .developers {
   position: relative;
+  padding-bottom: 70px;
 }
 
-.aboutUs .developers .slider {
+.aboutUs .developers__item {
+  text-align: center;
+}
+
+.aboutUs .developers .slick-arrow {
   color: #dddddd;
+  font-size: 0;
+  border: 0;
+  outline: none;
   line-height: 34px;
   background-color: rgba(85, 85, 85, 0.2);
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 27%;
   width: 35px;
   height: 38px;
   text-align: center;
@@ -316,19 +335,41 @@ ul {
   -webkit-animation-timing-function: step-end;
           animation-timing-function: step-end;
   cursor: pointer;
+  z-index: 1;
 }
 
-.aboutUs .developers .slider:hover {
+.aboutUs .developers .slick-arrow:hover {
   background-color: #c0301c;
 }
 
-.aboutUs .developers .slider img {
-  width: 8px;
-  height: 14px;
+.aboutUs .developers .slick-next {
+  right: 2.4%;
 }
 
-.aboutUs .developers .slider__previous {
-  z-index: 1;
+.aboutUs .developers .slick-next:after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url("../img/about-us/fa-angle-right.svg") center no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 33%;
+  top: 30%;
+}
+
+.aboutUs .developers .slick-prev {
+  left: 2.4%;
+}
+
+.aboutUs .developers .slick-prev:after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url("../img/about-us/fa-angle-left.svg") center no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 24%;
+  top: 30%;
 }
 
 .aboutUs .developers__portret {
@@ -336,11 +377,17 @@ ul {
   position: relative;
   width: 263px;
   height: 250px;
+  margin: 0 auto;
 }
 
 .aboutUs .developers__img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.aboutUs .developers__img[alt="Oleksii Naida"] {
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
 }
 
 .aboutUs .developers__name {
@@ -364,15 +411,7 @@ ul {
 
 .aboutUs .contacts {
   background-color: rgba(85, 85, 85, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  padding-top: 71%;
   position: absolute;
   top: 0;
   left: 0;
@@ -390,6 +429,7 @@ ul {
 }
 
 .aboutUs .contacts__item {
+  display: inline-block;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   -webkit-animation-timing-function: step-end;
@@ -398,10 +438,9 @@ ul {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
-  max-width: 28px;
-  max-height: 28px;
-  line-height: 28px;
-  margin-bottom: 30px;
+  min-width: 28px;
+  min-height: 28px;
+  position: relative;
 }
 
 .aboutUs .contacts__item:hover {
@@ -409,24 +448,36 @@ ul {
   opacity: 1;
 }
 
+.aboutUs .contacts__img {
+  position: absolute;
+}
+
 .aboutUs .contacts__img_facebook-size {
   width: 9px;
   height: 16px;
+  top: 24%;
+  left: 34%;
 }
 
 .aboutUs .contacts__img_twitter-size {
   width: 17px;
   height: 14px;
+  top: 25%;
+  left: 24%;
 }
 
 .aboutUs .contacts__img_google-size {
   width: 17px;
   height: 16px;
+  top: 25%;
+  left: 22%;
 }
 
 .aboutUs .contacts__img_linkedin-size {
   width: 14px;
   height: 14px;
+  top: 25%;
+  left: 23%;
 }
 
 .latestWorks {
@@ -458,19 +509,20 @@ ul {
   padding-left: 0px;
 }
 
-.latestWorks__navigateItem a {
+.latestWorks__navigateItem input {
+  display: none;
+}
+
+.latestWorks__navigateItem input:checked + p {
+  color: #c0301c;
+}
+
+.latestWorks__navigateItem p {
+  cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #555555;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-
-.latestWorks__navigateItem a:hover {
-  color: #c0301c;
 }
 
 .latestWorks__item {
@@ -758,6 +810,7 @@ ul {
   font-style: italic;
   color: #555555;
   margin: 0 auto 0 auto;
+  display: none;
 }
 
 .review__text_indent {
@@ -797,6 +850,30 @@ ul {
 
 .review .switch__item input:checked + .switch_style {
   background-color: #c0301c;
+}
+
+.opened {
+  -webkit-animation: fadeIn 0.8s;
+          animation: fadeIn 0.8s;
+  display: block;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .communication_padding {

@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Thesis project</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
    <link rel="stylesheet" href="css/style.css">
 </head>
@@ -107,8 +108,8 @@
             </p>
          </div>
          <div class="developers">
-            <div class="slider slider__previous"><img src="img/about-us/fa-angle-left.svg" alt="sliderLeft"></div>
-            <div class="slider slider__next"><img src="img/about-us/fa-angle-right.svg" alt="sliderRight"></div>
+            <!-- <div class="slider slider__previous"><img src="img/about-us/fa-angle-left.svg" alt="sliderLeft"></div>
+            <div class="slider slider__next"><img src="img/about-us/fa-angle-right.svg" alt="sliderRight"></div> -->
             <div class="developers__item">
                <div class="developers__portret">
                   <img src="img/about-us/khail.svg" alt="Md. Khalil Uddin" class="developers__img">
@@ -233,24 +234,37 @@
                   Front-end Developer
                </p>
             </div>
-            <!-- <div class="developers__item">
-               <div class="developers__content">
-                  <div class="developers__contacts contacts">
-                     <img src="" alt="">
-                  </div>
-                  <h4 class="developers__name"></h4>
-                  <p class="developers__profession"></p>
-               </div>
-            </div>
             <div class="developers__item">
-               <div class="developers__content">
+               <div class="developers__portret">
+                  <img src="img/about-us/myPhioto.JPG" alt="Oleksii Naida" class="developers__img">
                   <div class="developers__contacts contacts">
-                     <img src="" alt="">
+                     <div class="contacts__item">
+                        <a href="#" target="_blank">
+                           <img src="img/about-us/social networks icon/Facebook-Logo.png" alt="Facebook" class="contacts__img contacts__img_facebook-size">
+                        </a>
+                     </div>
+                     <div class="contacts__item">
+                        <a href="#" target="_blank">
+                           <img src="img/about-us/social networks icon/Twitter-Logo-Silhouette.png" alt="Twitter" class="contacts__img contacts__img_twitter-size">
+                        </a>
+                     </div>
+                     <div class="contacts__item">
+                        <a href="#" target="_blank">
+                           <img src="img/about-us/social networks icon/Google-Plus-Logo.png" alt="Google Plus" class="contacts__img contacts__img_google-size">
+                        </a>
+                     </div>
+                     <div class="contacts__item">
+                        <a href="#" target="_blank">
+                           <img src="img/about-us/social networks icon/fa-linkedin.png" alt="linkedin" class="contacts__img contacts__img_linkedin-size">
+                        </a>
+                     </div>
                   </div>
-                  <h4 class="developers__name"></h4>
-                  <p class="developers__profession"></p>
                </div>
-            </div> -->
+               <h4 class="developers__name">Oleksii Naida</h4>
+               <p class="developers__profession">
+                  Front-end Developer
+               </p>
+            </div>
          </div>
       </div>
    </section>
@@ -258,17 +272,30 @@
       <div class="container">
          <h2 class="services__title title">Latest Works</h2>
          <div class="services__line line"></div>
-         <nav class="latestWorks__navigate">
-            <ul>
-               <li class="latestWorks__navigateItem"><a href="#" target="_blank">All</a></li>
-               <li class="latestWorks__navigateItem"><a href="#" target="_blank">Branding</a></li>
-               <li class="latestWorks__navigateItem"><a href="#" target="_blank">Design</a></li>
-               <li class="latestWorks__navigateItem"><a href="#" target="_blank">Development</a></li>
-               <li class="latestWorks__navigateItem"><a href="#" target="_blank">Strategy</a></li>
-            </ul>
-         </nav>
+         <div class="latestWorks__navigate">
+               <label class="latestWorks__navigateItem">
+                  <input type="radio" name="company" value="All">
+                  <p>All</p>
+               </label>
+               <label class="latestWorks__navigateItem">
+                  <input type="radio" name="company" value="Branding">
+                  <p>Branding</p>
+               </label>
+               <label class="latestWorks__navigateItem">
+                  <input type="radio" name="company" value="Design">
+                  <p>Design</p>
+               </label>
+               <label class="latestWorks__navigateItem">
+                  <input type="radio" name="company" value="Development">
+                  <p>Development</p>
+               </label>
+               <label class="latestWorks__navigateItem">
+                  <input type="radio" name="company" value="Strategy">
+                  <p>Strategy</p>
+               </label>
+         </div>
          <div class="row">
-            <div class="latestWorks__item col-4 col-xl-4">
+            <div class="latestWorks__item All Branding col-4 col-xl-4">
                <img src="img/latest works/girl.svg" alt="girl" class="latestWorks__img">
                <div class="latestWorks__content all Branding">
                   <h4 class="latestWorks__author">Hair Dresser</h4>
@@ -276,7 +303,7 @@
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"></a>
                </div>
             </div>
-            <div class="latestWorks__item col-4 col-xl-4">
+            <div class="latestWorks__item All Branding col-4 col-xl-4">
                <img src="img/latest works/golub.svg" alt="golub" class="latestWorks__img">
                <div class="latestWorks__content all Branding">
                   <h4 class="latestWorks__author">John Doe</h4>
@@ -284,7 +311,7 @@
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"></a>
                </div>
             </div>
-            <div class="latestWorks__item col-4 col-xl-4">
+            <div class="latestWorks__item All Development col-4 col-xl-4">
                <img src="img/latest works/desctop.svg" alt="desctop" class="latestWorks__img">
                <div class="latestWorks__content all Development">
                   <h4 class="latestWorks__author">Oleksii Naida</h4>
@@ -292,7 +319,7 @@
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"></a>
                </div>
             </div>
-            <div class="latestWorks__item col-4 col-xl-4">
+            <div class="latestWorks__item All Development col-4 col-xl-4">
                <img src="img/latest works/camera.svg" alt="camera" class="latestWorks__img">
                <div class="latestWorks__content all Development">
                   <h4 class="latestWorks__author">Rubel Miah</h4>
@@ -300,7 +327,7 @@
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"></a>
                </div>
             </div>
-            <div class="latestWorks__item col-4 col-xl-4">
+            <div class="latestWorks__item All Design col-4 col-xl-4">
                <img src="img/latest works/bike.svg" alt="bike" class="latestWorks__img">
                <div class="latestWorks__content all Design">
                   <h4 class="latestWorks__author">Eugen Dream</h4>
@@ -308,7 +335,7 @@
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"></a>
                </div>
             </div>
-            <div class="latestWorks__item col-4 col-xl-4">
+            <div class="latestWorks__item All Strategy col-4 col-xl-4">
                <img src="img/latest works/notebook.svg" alt="notebook" class="latestWorks__img">
                <div class="latestWorks__content all Strategy">
                   <h4 class="latestWorks__author">Viktory Veresk</h4>
@@ -316,7 +343,7 @@
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"></a>
                </div>
             </div>
-            <div class="latestWorks__item col-4 col-xl-4 ">
+            <div class="latestWorks__item All Development col-4 col-xl-4 ">
                <img src="img/latest works/desctop2.svg" alt="desctop2" class="latestWorks__img">
                <div class="latestWorks__content all Development">
                   <h4 class="latestWorks__author">Denis Molodoi</h4>
@@ -324,7 +351,7 @@
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"> </a>
                </div>
             </div>
-            <div class="latestWorks__item col-4 col-xl-4">
+            <div class="latestWorks__item All Strategy col-4 col-xl-4">
                <img src="img/latest works/chancellery.svg" alt="chancellery" class="latestWorks__img">
                <div class="latestWorks__content all Strategy">
                   <h4 class="latestWorks__author">Alyona Pij</h4>
@@ -332,7 +359,7 @@
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"> </a>
                </div>
             </div>
-            <div class="latestWorks__item col-4 col-xl-4">
+            <div class="latestWorks__item All Design col-4 col-xl-4">
                <img src="img/latest works/events.svg" alt="events" class="latestWorks__img">
                <div class="latestWorks__content all Design">
                   <h4 class="latestWorks__author">Shamim Mia</h4>
@@ -445,7 +472,7 @@
             </div>
          </div>
          <div class="review">
-            <div class="review__text">
+            <div class="review__text opened" value='John'>
                <p class="review__text_indent">
                   "Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum"
                </p>
@@ -453,33 +480,33 @@
                   John Doe, Google Inc.
                </p>
             </div>
-            <!-- <div class="review__text">
+            <div class="review__text" value='Shamim'>
                <p class="review__text_indent">
-                  "Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum"
+                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis sit, officia commodi qui sed vitae quibusdam delectus voluptates ab culpa!"
                </p>
                <p class="review__by review__text_indent">
-                  John Doe, Google Inc.
+                  SHAMIM MIA, Sr. Web Developer.
                </p>
             </div>
-            <div class="review__text">
+            <div class="review__text" value='Rubel'>
                <p class="review__text_indent">
-                  "Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum"
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nam veritatis magni iste necessitatibus incidunt, facilis cupiditate eius minima iusto, reprehenderit nemo aliquam quibusdam"
                </p>
                <p class="review__by review__text_indent">
-                  John Doe, Google Inc.
+                  RUBEL MIAH, Lead WordPress Developer.
                </p>
-            </div> -->
+            </div>
             <div class="review__switch switch">
             <label class="switch__item">
-               <input type="radio" value="john" name="review">
+               <input type="radio" value="John" name="review">
                <p class="switch_style switch_active"></p>
             </label>
             <label class="switch__item">
-               <input type="radio" value="Khalil" name="review">
+               <input type="radio" value="Shamim" name="review">
                <p class="switch_style"></p>
             </label>
             <label class="switch__item">
-               <input type="radio" value="Shamim" name="review">
+               <input type="radio" value="Rubel" name="review">
                <p class="switch_style"></p>
             </label>
             </div>
@@ -589,6 +616,41 @@
    </footer>
 
 
+
+
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
    <script src="js/script.js"></script>
+   <script>
+      $('.developers').slick({
+         Infinite: true,
+         slidesToShow: 4,
+         slidesToScroll: 1,
+         responsive: [
+            {
+            breakpoint: 1200,
+            settings: {
+               slidesToShow: 3,
+               slidesToScroll: 1,
+            }
+            },
+            {
+            breakpoint: 992,
+            settings: {
+               slidesToShow: 2,
+               slidesToScroll: 1,
+            }
+            },
+            {
+            breakpoint: 768,
+            settings: {
+               slidesToShow: 1,
+               slidesToScroll: 1,
+            }
+            },
+         ]
+      })
+   </script>
 </body>
 </html>
