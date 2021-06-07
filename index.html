@@ -20,25 +20,25 @@
             <nav class="navigate">
                <ul>
                   <li class="navigate__item">
-                     <a href="#" target="_blank">Home</a>
+                     <a href="#">Home</a>
                   </li>
                   <li class="navigate__item">
-                     <a href="#" target="_blank">Services</a>
+                     <a href="#">Services</a>
                   </li>
                   <li class="navigate__item">
-                     <a href="#" target="_blank">About</a>
+                     <a href="#">About</a>
                   </li>
                   <li class="navigate__item">
-                     <a href="#" target="_blank">Works</a>
+                     <a href="#">Works</a>
                   </li>
                   <li class="navigate__item">
-                     <a href="#" target="_blank">Blog</a>
+                     <a href="#">Blog</a>
                   </li>
                   <li class="navigate__item">
-                     <a href="#" target="_blank">Clients</a>
+                     <a href="#">Clients</a>
                   </li>
                   <li class="navigate__item">
-                     <a href="#" target="_blank">Contact</a>
+                     <a href="#">Contact</a>
                   </li>
                </ul>
             </nav>
@@ -274,94 +274,94 @@
          <div class="services__line line"></div>
          <div class="latestWorks__navigate">
                <label class="latestWorks__navigateItem">
-                  <input type="radio" name="company" value="All">
+                  <input type="radio" name="company" value="All" data-filter="All">
                   <p>All</p>
                </label>
                <label class="latestWorks__navigateItem">
-                  <input type="radio" name="company" value="Branding">
+                  <input type="radio" name="company" value="Branding" data-filter="Branding">
                   <p>Branding</p>
                </label>
                <label class="latestWorks__navigateItem">
-                  <input type="radio" name="company" value="Design">
+                  <input type="radio" name="company" value="Design" data-filter="Design">
                   <p>Design</p>
                </label>
                <label class="latestWorks__navigateItem">
-                  <input type="radio" name="company" value="Development">
+                  <input type="radio" name="company" value="Development" data-filter="Development">
                   <p>Development</p>
                </label>
                <label class="latestWorks__navigateItem">
-                  <input type="radio" name="company" value="Strategy">
+                  <input type="radio" name="company" value="Strategy" data-filter="Strategy">
                   <p>Strategy</p>
                </label>
          </div>
-         <div class="row">
-            <div class="latestWorks__item All Branding col-4 col-xl-4">
+         <div class="row" id="portfolio">
+            <div class="latestWorks__item All col-4 col-xl-4" data-cat="Branding">
                <img src="img/latest works/girl.svg" alt="girl" class="latestWorks__img">
-               <div class="latestWorks__content all Branding">
+               <div class="latestWorks__content">
                   <h4 class="latestWorks__author">Hair Dresser</h4>
                   <p class="latestWorks__subsection">Branding</p>
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"></a>
                </div>
             </div>
-            <div class="latestWorks__item All Branding col-4 col-xl-4">
+            <div class="latestWorks__item All col-4 col-xl-4" data-cat="Branding">
                <img src="img/latest works/golub.svg" alt="golub" class="latestWorks__img">
-               <div class="latestWorks__content all Branding">
+               <div class="latestWorks__content">
                   <h4 class="latestWorks__author">John Doe</h4>
                   <p class="latestWorks__subsection">Branding</p>
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"></a>
                </div>
             </div>
-            <div class="latestWorks__item All Development col-4 col-xl-4">
+            <div class="latestWorks__item All col-4 col-xl-4" data-cat="Development">
                <img src="img/latest works/desctop.svg" alt="desctop" class="latestWorks__img">
-               <div class="latestWorks__content all Development">
+               <div class="latestWorks__content">
                   <h4 class="latestWorks__author">Oleksii Naida</h4>
                   <p class="latestWorks__subsection">Development</p>
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"></a>
                </div>
             </div>
-            <div class="latestWorks__item All Development col-4 col-xl-4">
+            <div class="latestWorks__item All col-4 col-xl-4" data-cat="Development">
                <img src="img/latest works/camera.svg" alt="camera" class="latestWorks__img">
-               <div class="latestWorks__content all Development">
+               <div class="latestWorks__content">
                   <h4 class="latestWorks__author">Rubel Miah</h4>
                   <p class="latestWorks__subsection">Development</p>
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"></a>
                </div>
             </div>
-            <div class="latestWorks__item All Design col-4 col-xl-4">
+            <div class="latestWorks__item All col-4 col-xl-4" data-cat="Design">
                <img src="img/latest works/bike.svg" alt="bike" class="latestWorks__img">
-               <div class="latestWorks__content all Design">
+               <div class="latestWorks__content">
                   <h4 class="latestWorks__author">Eugen Dream</h4>
                   <p class="latestWorks__subsection">Design</p>
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"></a>
                </div>
             </div>
-            <div class="latestWorks__item All Strategy col-4 col-xl-4">
+            <div class="latestWorks__item All col-4 col-xl-4" data-cat="Strategy">
                <img src="img/latest works/notebook.svg" alt="notebook" class="latestWorks__img">
-               <div class="latestWorks__content all Strategy">
+               <div class="latestWorks__content">
                   <h4 class="latestWorks__author">Viktory Veresk</h4>
                   <p class="latestWorks__subsection">Strategy</p>
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"></a>
                </div>
             </div>
-            <div class="latestWorks__item All Development col-4 col-xl-4 ">
+            <div class="latestWorks__item All col-4 col-xl-4" data-cat="Development">
                <img src="img/latest works/desctop2.svg" alt="desctop2" class="latestWorks__img">
-               <div class="latestWorks__content all Development">
+               <div class="latestWorks__content">
                   <h4 class="latestWorks__author">Denis Molodoi</h4>
                   <p class="latestWorks__subsection">Development</p>
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"> </a>
                </div>
             </div>
-            <div class="latestWorks__item All Strategy col-4 col-xl-4">
+            <div class="latestWorks__item All Strategy col-4 col-xl-4" data-cat="Strategy">
                <img src="img/latest works/chancellery.svg" alt="chancellery" class="latestWorks__img">
-               <div class="latestWorks__content all Strategy">
+               <div class="latestWorks__content">
                   <h4 class="latestWorks__author">Alyona Pij</h4>
                   <p class="latestWorks__subsection">Strategy</p>
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"> </a>
                </div>
             </div>
-            <div class="latestWorks__item All Design col-4 col-xl-4">
+            <div class="latestWorks__item All col-4 col-xl-4" data-cat="Design">
                <img src="img/latest works/events.svg" alt="events" class="latestWorks__img">
-               <div class="latestWorks__content all Design">
+               <div class="latestWorks__content">
                   <h4 class="latestWorks__author">Shamim Mia</h4>
                   <p class="latestWorks__subsection">Design</p>
                   <a href="#" class="latestWorks__link ">view <img src="img/latest works/latestWorks__fa-angle-right.svg" class="latestWorks__fa-angle-right-img"></a>

@@ -13,22 +13,32 @@ function showTab() {
 
 //Плитка
 let tileInput = $('.latestWorks__navigateItem > input');
-let all = $('.latestWorks__item.All');
-let branding = $('.latestWorks__item.Branding');
-let development = $('.latestWorks__item.Development');
-let design = $('.latestWorks__item.Design');
-let strategy = $('.latestWorks__item.Strategy');
-
-// $('.latestWorks__item').hide();
+let filter = $('[data-filter]');
+// let all = $('[data-cat="All"]');
+// let branding = $('[data-cat="Branding"]');
+// let development = $('[data-cat="Development"]');
+// let design = $('[data-cat="Design"]');
+// let strategy = $('[data-cat="Strategy"]');
 
 tileInput.filter(':first').attr('checked', 'checked');
 
-tabInput.on('change', showTile);
-// $(document).ready(function () {
-//    tabInput.on('change', showTile);
-//    showTile();
-// });
+filter.on('change', showTile);
 
 function showTile() {
+   let cat = $(this).data('filter');
 
+   if(cat == 'All'){
+      $('[data-cat]').show('slow');
+   }else{
+      $('[data-cat]').each(function(){
+
+         let workCat = $(this).data('cat');
+   
+         if(workCat != cat){
+            $(this).hide('slow');
+         }else{
+            $(this).show('slow');
+         }
+      })
+   }
 }
