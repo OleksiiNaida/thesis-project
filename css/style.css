@@ -1090,4 +1090,237 @@ ul {
   padding-bottom: 100px;
   padding-top: 30px;
 }
+
+@media all and (max-width: 1400px) {
+  .aboutUs .developers .slick-prev {
+    left: 0.8%;
+  }
+  .aboutUs .developers .slick-next {
+    right: 0.8%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .aboutUs .developers .slick-prev {
+    left: 2.7%;
+  }
+  .aboutUs .developers .slick-next {
+    right: 2.7%;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .aboutUs .developers .slick-prev {
+    left: 6.1%;
+  }
+  .aboutUs .developers .slick-next {
+    right: 6.1%;
+  }
+  .blog .recentPosts__title_view {
+    text-align: left;
+  }
+  .blog .recentPosts__date {
+    padding: 12px 0px;
+    max-width: 17%;
+  }
+  .contactUs .contactUs__img {
+    left: -3%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .services__title {
+    padding-top: 30px;
+  }
+  .services .aboutServices__item {
+    padding-bottom: 50px;
+  }
+  .aboutUs__title {
+    padding-top: 50px;
+  }
+  .aboutUs__subTitle {
+    padding-bottom: 30px;
+  }
+  .aboutUs__flexText {
+    padding-bottom: 30px;
+  }
+  .aboutUs .developers {
+    padding-bottom: 50px;
+  }
+  .aboutUs .developers .slick-prev {
+    left: 24.5%;
+  }
+  .aboutUs .developers .slick-next {
+    right: 24.5%;
+  }
+  .latestWorks_padding-bottom {
+    padding-bottom: 50px;
+  }
+  .orderAproject__text {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+  .orderAproject__btn {
+    margin-bottom: 50px;
+  }
+  .blog_padding {
+    padding-bottom: 50px;
+  }
+  .blog__title {
+    padding-top: 50px;
+  }
+  .blog__sub-title {
+    padding-bottom: 35px;
+  }
+  .blog .recentPosts__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blog .recentPosts__img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .blog .recentPosts__content {
+    width: 100%;
+  }
+  .blog .recentPosts__date {
+    max-width: 14%;
+  }
+  .company__list {
+    padding: 50px 0px 35px 0px;
+  }
+  .company__item:last-child {
+    margin-top: 10px;
+  }
+  .company .review__text {
+    max-width: 100%;
+  }
+  .company .review__switch {
+    padding-bottom: 50px;
+  }
+  .communication_padding {
+    padding-bottom: 50px;
+  }
+  .contactUs .contactUs__img {
+    left: -6%;
+  }
+  .contactYou .form__btn {
+    font-size: 10px;
+  }
+  .footer .twitter_padding {
+    padding: 50px 0 30px 0;
+  }
+  .footer .address__text {
+    padding-bottom: 50px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .aboutServices__item {
+    padding-bottom: 30px;
+  }
+  .aboutUs .developers .slick-prev {
+    left: 26.2%;
+  }
+  .aboutUs .developers .slick-next {
+    right: 26.2%;
+  }
+  .blog .recentPosts__date {
+    max-width: 13%;
+  }
+  .company__list {
+    padding: 40px 0px;
+  }
+  .company__item {
+    margin-bottom: 30px;
+  }
+  .company__item:nth-child(2) {
+    margin: 0px;
+  }
+  .company__item:last-child {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .company__img {
+    width: 35%;
+  }
+  .communication {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .communication_padding {
+    padding-bottom: 0px;
+  }
+  .contactUs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 50px;
+  }
+  .contactUs .contactUs__img {
+    left: 5%;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .aboutUs__flexText {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .aboutUs__title {
+    padding-top: 30px;
+  }
+  .aboutUs__subTitle {
+    padding-bottom: 30px;
+  }
+  .aboutUs__text {
+    text-align: justify;
+  }
+  .aboutUs__text:first-child {
+    padding-bottom: 20px;
+  }
+  .aboutUs .developers .slick-prev {
+    left: 5.8%;
+  }
+  .aboutUs .developers .slick-next {
+    right: 5.8%;
+  }
+  .orderAproject__text {
+    padding-top: 50px;
+  }
+  .orderAproject__btn {
+    margin-bottom: 50px;
+  }
+  .blog .recentPosts__date {
+    max-width: 18%;
+  }
+  .blog .recentPosts__title {
+    padding-left: 10px;
+  }
+  .contactUs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactUs__item {
+    text-align: center;
+  }
+  .contactUs .contactUs__img {
+    left: 36%;
+  }
+  .contactUs .contactUs__img_position {
+    left: 28%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

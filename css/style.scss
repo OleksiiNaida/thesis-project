@@ -989,4 +989,307 @@ ul{
    }
 }
 
+//Адаптив 
 
+@media all and (max-width: 1400px) {
+   .aboutUs {
+      .developers{
+         .slick-prev{
+            left: 0.8%;
+         }
+         .slick-next{
+            right: 0.8%;
+         }
+      }
+   }
+}
+
+@media all and (max-width: 1200px) {
+   .aboutUs {
+      .developers{
+         .slick-prev{
+            left: 2.7%;
+         }
+         .slick-next{
+            right: 2.7%;
+         }
+      }
+   }
+}
+
+@media all and (max-width: 992px) {
+   .aboutUs {
+      .developers{
+         .slick-prev{
+            left: 6.1%;
+         }
+         .slick-next{
+            right: 6.1%;
+         }
+      }
+   }
+   .blog{
+      .recentPosts__title_view{
+         text-align: left;
+      }
+      .recentPosts__date{
+         padding: 12px 0px;
+         max-width: 17%;
+      }
+   }
+   .contactUs{
+      .contactUs__img{
+         left: -3%;
+      }
+   }
+
+}
+
+@media all and (max-width: 768px) {
+   .services{
+      &__title{
+         padding-top: 30px;
+      }
+      .aboutServices{
+         &__item{
+            padding-bottom: 50px;
+         }
+      }
+   }
+
+   .aboutUs {
+      &__title{
+         padding-top: 50px;
+      }
+
+      &__subTitle{
+         padding-bottom: 30px;
+      }
+
+      &__flexText{
+         padding-bottom: 30px;
+      }
+
+      .developers{
+         padding-bottom: 50px;
+         .slick-prev{
+            left: 24.5%;
+         }
+         .slick-next{
+            right: 24.5%;
+         }
+      }
+   }
+
+   .latestWorks{
+      &_padding-bottom{
+         padding-bottom: 50px;
+      }
+   }
+
+   .orderAproject{
+      &__text{
+         padding-top: 50px;
+         padding-bottom: 25px;
+      }
+      &__btn{
+         margin-bottom: 50px;
+      }
+   }
+
+   .blog{
+      &_padding{
+         padding-bottom: 50px;
+      }
+      &__title{
+         padding-top: 50px;
+      }
+      &__sub-title {
+         padding-bottom: 35px;
+      }
+      .recentPosts {
+         &__item {
+            flex-direction: column;
+            align-items: center;
+         }
+         &__img {
+            width: 100%;
+            margin-bottom: 30px;
+         }
+         &__content {
+            width: 100%;
+         }
+         &__date {
+            max-width: 14%;
+         }
+      }
+   }
+
+   .company{
+      &__list{
+         padding: 50px 0px 35px 0px;
+      }
+      &__item:last-child{
+         margin-top: 10px;
+      }
+      .review{
+         &__text{
+            max-width: 100%;
+         }
+      }
+      .review{
+         &__switch{
+            padding-bottom: 50px;
+         }
+      }
+   }
+
+   .communication{
+      &_padding{
+         padding-bottom: 50px;
+      }
+   }
+
+   .contactUs{
+      .contactUs__img{
+         left: -6%;
+      }
+   }
+
+   .contactYou{
+      .form{
+         &__btn{
+            font-size: 10px;
+         }
+      }
+   }
+   
+   .footer{
+      .twitter_padding {
+         padding: 50px 0 30px 0;
+      }
+      .address__text {
+         padding-bottom: 50px;
+      }
+   }
+}
+
+@media all and (max-width: 576px){
+   .aboutServices{
+      &__item{
+         padding-bottom: 30px;
+      }
+   }
+
+   .aboutUs {
+      .developers{
+         .slick-prev{
+            left: 26.2%;
+         }
+         .slick-next{
+            right: 26.2%;
+         }
+      }
+   }
+
+   .blog{
+      .recentPosts__date{
+         max-width: 13%;
+      }
+   }
+
+   .company{
+      &__list{
+         padding: 40px 0px;
+      }
+      &__item{
+         margin-bottom: 30px;
+         &:nth-child(2){
+            margin: 0px;
+         }
+         &:last-child{
+            margin-top: 0px;
+            margin-bottom: 0px;
+         }
+      }
+      &__img{
+         width: 35%;
+      }
+   }
+   
+   .communication{
+      flex-direction: column-reverse;
+      &_padding{
+         padding-bottom: 0px;
+      }
+   }
+
+   .contactUs{
+      display: flex;
+      padding-top: 50px;
+      .contactUs__img{
+         left: 5%;
+      }
+   }
+}
+
+@media all and (max-width: 320px){
+   .aboutUs{
+      &__flexText{
+         flex-direction: column;
+         padding-bottom: 30px;
+      }
+      &__title{
+         padding-top: 30px;
+      }
+      &__subTitle{
+         padding-bottom: 30px;
+      }
+      &__text{
+         text-align: justify;
+         &:first-child{
+            padding-bottom: 20px;
+         }
+      }
+
+      .developers{
+         .slick-prev{
+            left: 5.8%;
+         }
+         .slick-next{
+            right: 5.8%;
+         }
+      }
+   }
+
+   .orderAproject{
+      &__text{
+         padding-top: 50px;
+      }
+      &__btn{
+         margin-bottom: 50px;
+      }
+   }
+
+   .blog{
+      .recentPosts__date{
+         max-width: 18%;
+      }
+      .recentPosts__title{
+         padding-left: 10px;
+      }
+   }
+
+   .contactUs{
+      flex-direction: column;
+      &__item{
+         text-align: center;
+      }
+      .contactUs__img{
+         left: 36%;
+         &_position{
+            left: 28%;
+         }
+      }
+   }
+}
