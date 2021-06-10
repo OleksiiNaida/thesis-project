@@ -991,7 +991,7 @@ ul{
 
 //Адаптив 
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399.98px) {
    .aboutUs {
       .developers{
          .slick-prev{
@@ -1004,7 +1004,7 @@ ul{
    }
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1199.98px) {
    .aboutUs {
       .developers{
          .slick-prev{
@@ -1017,7 +1017,7 @@ ul{
    }
 }
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 991.98px) {
    .aboutUs {
       .developers{
          .slick-prev{
@@ -1045,7 +1045,7 @@ ul{
 
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767.98px) {
    .services{
       &__title{
          padding-top: 30px;
@@ -1174,7 +1174,7 @@ ul{
    }
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 575.98px){
    .aboutServices{
       &__item{
          padding-bottom: 30px;
@@ -1233,6 +1233,56 @@ ul{
    }
 }
 
+@media all and (max-width: 414.98px){
+   .aboutUs {
+      .developers{
+         .slick-prev{
+            left: 16.4%;
+         }
+         .slick-next{
+            right: 16.4%;
+         }
+      }
+   }
+
+   .contactUs{
+      padding-bottom: 20px;
+      flex-direction: column;
+      &__item{
+         text-align: center;
+      }
+      .contactUs__img{
+         left: 40%;
+         &_position{        
+            left: 33%;
+         }
+      }
+   }
+}
+
+@media all and (max-width: 375.98px){
+   
+   .aboutUs {
+      .developers{
+         .slick-prev{
+            left: 12.8%;
+         }
+         .slick-next{
+            right: 12.8%;
+         }
+      }
+   }
+   .contactUs{
+
+      .contactUs__img{
+         left: 38%;
+         &_position{        
+            left: 31%;
+         }
+      }
+   }
+}
+
 @media all and (max-width: 320px){
    .aboutUs{
       &__flexText{
@@ -1281,10 +1331,7 @@ ul{
    }
 
    .contactUs{
-      flex-direction: column;
-      &__item{
-         text-align: center;
-      }
+
       .contactUs__img{
          left: 36%;
          &_position{

@@ -42,3 +42,52 @@ function showTile() {
       })
    }
 }
+
+//Навигация 
+
+$(function () {
+
+   $('.navigate__item > a').click(function () {
+      const ID = $(this).attr('href');
+      //  console.log(ID);
+      const PAGE_OFFSET = $(ID).offset().top;
+      //  console.log(PAGE_OFFSET);
+      $('html').animate({
+         scrollTop: PAGE_OFFSET
+      },1000)
+   })
+
+});
+
+//Форма отправки
+
+$('.form').submit(function(e){
+   e.preventDefault();
+   let th = $(this);
+   let mess = $('.mess');
+   let btn = th.find('.form__btn');
+   btn.addClass('progress-bar-striped progress-bar-animated');
+
+   $.ajax({
+      url: "foo.php", // указываем URL
+      method: "POST",            // HTTP метод, по умолчанию GET
+      data: th.serialize(),         // данные, которые отправляем на сервер
+      // dataType: "html",         // тип данных загружаемых с сервера
+      success: function (data) {
+         if(data==1){
+            btn.removeClass('progress-bar-striped progress-bar-animated');
+            mess.html('<div class="alert mt-3 alert-danger">Email введен не верно!</div>');
+            return false;
+         }else{
+            btn.removeClass('progress-bar-striped progress-bar-animated');
+            mess.html('<div class="alert mt-3 alert-succes">Сообщение успешно отправлено!</div>');
+            setTimeout(function(){
+               th.trigger('reset');
+            }, 3000)
+         }
+      },error: function(){
+         mess.html('<div class="alert mt-3 alert-danger">Ошибка отправки!</div>');
+         btn.removeClass('progress-bar-striped progress-bar-animated');
+      }
+   })
+});

@@ -1091,7 +1091,7 @@ ul {
   padding-top: 30px;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399.98px) {
   .aboutUs .developers .slick-prev {
     left: 0.8%;
   }
@@ -1100,7 +1100,7 @@ ul {
   }
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1199.98px) {
   .aboutUs .developers .slick-prev {
     left: 2.7%;
   }
@@ -1109,7 +1109,7 @@ ul {
   }
 }
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 991.98px) {
   .aboutUs .developers .slick-prev {
     left: 6.1%;
   }
@@ -1128,7 +1128,7 @@ ul {
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767.98px) {
   .services__title {
     padding-top: 30px;
   }
@@ -1220,7 +1220,7 @@ ul {
   }
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 575.98px) {
   .aboutServices__item {
     padding-bottom: 30px;
   }
@@ -1269,6 +1269,46 @@ ul {
   }
 }
 
+@media all and (max-width: 414.98px) {
+  .aboutUs .developers .slick-prev {
+    left: 16.4%;
+  }
+  .aboutUs .developers .slick-next {
+    right: 16.4%;
+  }
+  .contactUs {
+    padding-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactUs__item {
+    text-align: center;
+  }
+  .contactUs .contactUs__img {
+    left: 40%;
+  }
+  .contactUs .contactUs__img_position {
+    left: 33%;
+  }
+}
+
+@media all and (max-width: 375.98px) {
+  .aboutUs .developers .slick-prev {
+    left: 12.8%;
+  }
+  .aboutUs .developers .slick-next {
+    right: 12.8%;
+  }
+  .contactUs .contactUs__img {
+    left: 38%;
+  }
+  .contactUs .contactUs__img_position {
+    left: 31%;
+  }
+}
+
 @media all and (max-width: 320px) {
   .aboutUs__flexText {
     -webkit-box-orient: vertical;
@@ -1306,15 +1346,6 @@ ul {
   }
   .blog .recentPosts__title {
     padding-left: 10px;
-  }
-  .contactUs {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contactUs__item {
-    text-align: center;
   }
   .contactUs .contactUs__img {
     left: 36%;

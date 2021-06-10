@@ -10,7 +10,7 @@
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <section class="homePage">
+   <section class="homePage" id="home">
       <div class="homePage__backGround">
          <img src="img/main.svg" alt="" class="homePage__backGroundImg">
       </div>
@@ -20,25 +20,25 @@
             <nav class="navigate">
                <ul>
                   <li class="navigate__item">
-                     <a href="#">Home</a>
+                     <a href="#home">Home</a>
                   </li>
                   <li class="navigate__item">
-                     <a href="#">Services</a>
+                     <a href="#services">Services</a>
                   </li>
                   <li class="navigate__item">
-                     <a href="#">About</a>
+                     <a href="#aboutUs">About</a>
                   </li>
                   <li class="navigate__item">
-                     <a href="#">Works</a>
+                     <a href="#latestWorks">Works</a>
                   </li>
                   <li class="navigate__item">
-                     <a href="#">Blog</a>
+                     <a href="#blog">Blog</a>
                   </li>
                   <li class="navigate__item">
                      <a href="#">Clients</a>
                   </li>
                   <li class="navigate__item">
-                     <a href="#">Contact</a>
+                     <a href="#contact">Contact</a>
                   </li>
                </ul>
             </nav>
@@ -51,7 +51,7 @@
       </div>
    </section>
    <section>
-   <div class="container services">
+   <div class="container services" id="services">
       <h2 class="services__title title">Services</h2>
       <div class="services__line line"></div>
       <p class="services__text sub-title">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
@@ -92,7 +92,7 @@
       </div>
    </div>
    </section>
-   <section class="aboutUs aboutUs_background">
+   <section class="aboutUs aboutUs_background" id="aboutUs">
       <div class="container">
          <h2 class="aboutUs__title title">About us</h2>
          <div class="line aboutUs__line"></div>
@@ -268,7 +268,7 @@
          </div>
       </div>
    </section>
-   <section class="latestWorks latestWorks_padding-bottom">
+   <section class="latestWorks latestWorks_padding-bottom" id="latestWorks">
       <div class="container">
          <h2 class="services__title title">Latest Works</h2>
          <div class="services__line line"></div>
@@ -386,7 +386,7 @@
             <a href="#" target="_blank" class="orderAproject__btn btn-send">Get in Touch</a>
          </div>
    </section>
-   <section class="blog blog_padding">
+   <section class="blog blog_padding" id="blog">
       <div class="container">
          <h3 class="title blog__title">Recent blog posts</h3>
          <div class="line blog__line"></div>
@@ -513,7 +513,7 @@
          </div>
       </div>
    </section>
-   <section class="getTouch">
+   <section class="getTouch" id="contact">
       <div class="container">
          <h2 class="blog__title title">Get in touch</h2>
          <div class="blog__line line"></div>
@@ -557,12 +557,12 @@
                </div>
             </div>
             <div class="contactYou col-12 col-sm-8 col-xl-8">
-               <form action="#" method="GET" class="form row align-items-center">
+               <form method="POST" class="form row align-items-center">
                   <label class="col-12 col-sm-6 col-xl-6">
-                     <input type="text" name="name" placeholder="YOUR NAME" class="form__input">
+                     <input type="text" name="name" placeholder="YOUR NAME" class="form__input" required>
                   </label >
                   <label class="col-12 col-sm-6 col-xl-6">
-                     <input type="text" name="email" placeholder="YOUR E-MAIL" class="form__input">
+                     <input type="text" name="email" placeholder="YOUR E-MAIL" class="form__input" required>
                   </label>
                   <label class="col-12 col-sm-6 col-xl-6">
                      <input type="text" name="subject" placeholder="YOUR SUBJECT" class="form__input">
@@ -571,7 +571,7 @@
                      <input type="text" name="company" placeholder="COMPANY NAME" class="form__input">
                   </label>
                   <label class="col-12 col-xl-12">
-                     <textarea cols="30" rows="10" type="text" name="message" placeholder="WRITE YOUR MESSAGE" class="form__input form__textarea"></textarea>
+                     <textarea cols="30" rows="10" type="text" name="message" placeholder="WRITE YOUR MESSAGE" class="form__input form__textarea" required></textarea>
                   </label>
                   <label class="col-6 col-sm-4 col-xl-4">
                      <input type="submit" value="SEND MESSAGE" class="form__input form__btn mb-0">
@@ -580,6 +580,7 @@
                      <span class="form__text_red">*</span>We’ll contact you as as possible. We don’t reply on Monday.
                   </p>
                </form>
+               <div class="mess"></div>
             </div>
          </div>
       </div>
