@@ -1331,9 +1331,16 @@ ul{
 
 @media all and (max-width: 414.98px){
    .navigate{
+      border-top-right-radius: 27px;
+      &__btn{
+         right: 1%;
+      }
       &__menu{
          justify-content: flex-start;
          align-items: center;
+         margin-right: -8px;
+         border-bottom-right-radius: 50px;
+         padding-right: 45px;
       }
       &__item{
          flex: 0 0 100%;

@@ -1373,6 +1373,12 @@ ul {
 }
 
 @media all and (max-width: 414.98px) {
+  .navigate {
+    border-top-right-radius: 27px;
+  }
+  .navigate__btn {
+    right: 1%;
+  }
   .navigate__menu {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1380,6 +1386,9 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-right: -8px;
+    border-bottom-right-radius: 50px;
+    padding-right: 45px;
   }
   .navigate__item {
     -webkit-box-flex: 0;
