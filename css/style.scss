@@ -1266,6 +1266,11 @@ ul{
 }
 
 @media all and (max-width: 575.98px){
+   .homePage{
+      &__header{
+         padding-right: 5%;
+      }
+   }
    .aboutServices{
       &__item{
          padding-bottom: 30px;
