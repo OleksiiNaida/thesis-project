@@ -1098,6 +1098,8 @@ ul{
          padding-right: 60px;
          padding-left: 25px;
          margin-right: -12px;
+         border-top-right-radius: 23px;
+         border-bottom-right-radius: 50px;
          border-top-left-radius: 50px;
          border-bottom-left-radius: 50px;
          overflow: hidden;
@@ -1340,6 +1342,7 @@ ul{
          align-items: center;
          margin-right: -8px;
          border-bottom-right-radius: 50px;
+         border-top-right-radius: 27px;
          padding-right: 45px;
       }
       &__item{
