@@ -42,7 +42,6 @@ ul {
 }
 
 .homePage__backGround {
-  background-color: #000;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -51,8 +50,17 @@ ul {
   z-index: -1;
 }
 
+.homePage__backGround_rgba {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
 .homePage__backGroundImg {
-  opacity: 0.55;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
@@ -67,6 +75,7 @@ ul {
 .homePage__content {
   text-align: center;
   padding-bottom: 221px;
+  z-index: 9;
 }
 
 .homePage__title {
@@ -448,41 +457,43 @@ ul {
   position: relative;
 }
 
+.aboutUs .contacts__item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-height: 28px;
+}
+
 .aboutUs .contacts__item:hover {
   background-color: #c0301c;
   opacity: 1;
 }
 
-.aboutUs .contacts__img {
-  position: absolute;
-}
-
 .aboutUs .contacts__img_facebook-size {
   width: 9px;
   height: 16px;
-  top: 24%;
-  left: 34%;
 }
 
 .aboutUs .contacts__img_twitter-size {
   width: 17px;
   height: 14px;
-  top: 25%;
-  left: 24%;
 }
 
 .aboutUs .contacts__img_google-size {
   width: 17px;
   height: 16px;
-  top: 25%;
-  left: 22%;
 }
 
 .aboutUs .contacts__img_linkedin-size {
   width: 14px;
   height: 14px;
-  top: 25%;
-  left: 23%;
 }
 
 .latestWorks {

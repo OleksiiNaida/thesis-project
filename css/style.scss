@@ -49,17 +49,24 @@ ul{
    min-height: 100vh;
    overflow: auto;
    &__backGround{
-      background-color: #000;
       position: absolute;
       left: 0;
       bottom: 0;
       right: 0;
       top: 0;
       z-index: -1;
+      &_rgba{
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         right: 0;
+         top: 0;
+         background-color: rgba(0, 0, 0, 0.45);
+         z-index: -1;
+      }
    }
 
    &__backGroundImg{
-      opacity: 0.55;
       object-fit: cover;
       height: 100%;
       width: 100%;
@@ -73,6 +80,7 @@ ul{
    &__content {
       text-align: center;
       padding-bottom: 221px;
+      z-index: 9;
    }
 
    &__title {
@@ -405,6 +413,13 @@ ul{
          min-width: 28px;
          min-height: 28px;
          position: relative;
+         & a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 28px;
+         }     
          &:hover{
             background-color: #c0301c;
             opacity: 1;
@@ -413,34 +428,34 @@ ul{
 
       &__img {
 
-         position: absolute;
+         // position: absolute;
 
          &_facebook-size {
             width: 9px;
             height: 16px;
-            top: 24%;
-            left: 34%;
+            // top: 24%;
+            // left: 34%;
          }
 
          &_twitter-size {
             width: 17px;
             height: 14px;
-            top: 25%;
-            left: 24%;
+            // top: 25%;
+            // left: 24%;
          }
 
          &_google-size {
             width: 17px;
             height: 16px;
-            top: 25%;
-            left: 22%;
+            // top: 25%;
+            // left: 22%;
          }
 
          &_linkedin-size {
             width: 14px;
             height: 14px;
-            top: 25%;
-            left: 23%;
+            // top: 25%;
+            // left: 23%;
          }
       }
    }

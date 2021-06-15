@@ -1,3 +1,15 @@
+<!-- use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'phpmailer/src/Exception.php';
+require 'phpmailer/src/PHPMailer.php';
+
+$mail = new PHPMailer(true);
+$mail->CharSet = 'UTF-8';
+$mail->setLanguage('ru', 'phpmailer/language/');
+$mail->IsHTML(true); -->
+
+
 $to = 'alyoshkin123@gmail.com';
 $from = "From: заявка с сайта <alyoshkin123.ua>\n\r";
    $email = $_POST['email'];

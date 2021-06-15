@@ -45,19 +45,21 @@ function showTile() {
 
 //Навигация 
 
-$(function () {
+$(document).ready(function () {
 
-   $('.navigate__item > a').click(function () {
+   $('.navigate__item > a').click(function (e) {
+      e.preventDefault();
       const ID = $(this).attr('href');
       //  console.log(ID);
       const PAGE_OFFSET = $(ID).offset().top;
       //  console.log(PAGE_OFFSET);
-      $('html').animate({
+      $('html, body').animate({
          scrollTop: PAGE_OFFSET
-      },1000)
+      },"slow", "linear")
    })
 
 });
+
 
 //Форма отправки
 
